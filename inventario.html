@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inventario</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <h1>Inventario</h1>
+    </header>
+    <section id="producto-lista">
+        <h2>Productos Disponibles</h2>
+        <div>
+            <div class="producto">
+                <p>Producto A - $10.00</p>
+                <button onclick="agregarAlCarrito('Producto A', 10.00)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>Producto B - $15.00</p>
+                <button onclick="agregarAlCarrito('Producto B', 15.00)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>Producto C - $20.00</p>
+                <button onclick="agregarAlCarrito('Producto C', 20.00)">Agregar al Carrito</button>
+            </div>
+            <div class="producto">
+                <p>Producto D - $25.00</p>
+                <button onclick="agregarAlCarrito('Producto D', 25.00)">Agregar al Carrito</button>
+            </div>
+        </div>
+    </section>
+    <section>
+        <h2>Carrito</h2>
+        <ul id="carrito"></ul>
+        <p id="total">Total: $0.00</p>
+        <button onclick="window.location.href='facturacion.html'">Ir a Facturación</button>
+    </section>
+    <button onclick="window.location.href='index.html'">Volver a Inicio</button>
+</body>
+</html>
