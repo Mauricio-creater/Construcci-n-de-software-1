@@ -8,14 +8,14 @@ Tablero=[[' ',' ',' '],[' ',' ',' '],[' ',' ',' ']]
 #Tablero=[[' ']*3]*3 #Asi se crean arrays multidimensionales
 end=[False,False] # Result"X", Result2"O""
 def imprimir_puntaje():
-    with open("python/Score.txt") as puntaje:
+    with open("Score.txt") as puntaje:
         lista_p=puntaje.readlines()
     punt=list(lista_p[0])
     print("Jugador 1 \"X\": ",punt[0]," punto(s)")
     print("Jugador 2 \"O\": ",lista_p[1]," punto(s)")
 Puntuacion_global=["",""]
 def Leer_Puntajes():
-    with open("python/Score.txt") as archivo:
+    with open("Score.txt") as archivo:
         lista=list(archivo.readlines())
         Puntuacion_global[0]=str(lista[0])
         Puntuacion_global[1]=str(lista[1])
@@ -26,7 +26,7 @@ def Leer_Puntajes():
     """
 Leer_Puntajes()
 def modificar_dato(a):
-    with open("python/Score.txt","r+") as arch:
+    with open("Score.txt","r+") as arch:
         arch.write(f"{a[0]}\n{a[1]}")
 def Salir(): #Esta funcion me sirve para terminar el programa
    system("cls")
